@@ -1,0 +1,205 @@
+[
+    {
+        "id": 1,
+        "title": "Halloween",
+        "subtitle" : "Truco o trato... ¡mejor ambos!",
+        "image": "/images/sections/halloween/halloween.png",
+        "iconName": "mdiHalloween",
+        "subdivisions": [
+            {
+                "id":101,
+                "name": "Calavera",
+                "flavor" : "Sabor a mango con mora azul",
+                "quantity" : "50 piezas",
+                "images": [
+                    "/images/sections/halloween/Calavera/calavera1.png",
+                    "/images/sections/halloween/Calavera/calavera2.png",
+                    "/images/sections/halloween/Calavera/calavera3.png",
+                    "/images/sections/halloween/Calavera/calavera4.png",
+                    "/images/sections/halloween/Calavera/calavera5.png",
+                    "/images/sections/halloween/Calavera/calavera6.png",
+                    "/images/sections/halloween/Calavera/calavera7.png"
+                ],
+                "nutrition": {
+                    
+                    "proteinas": "5g",
+                    "Grasas Totales": "0g",
+                    "Grasas Sautaradas":"0g",
+                    "Grasas Trans": "0mg",
+                    "Hidratos De Carbono": "77g",
+                    "Azucares": "76g",
+                    "Azucares Añadidos":"76g",
+                    "Fibra Diabetica":"0.50g",
+                    "Sodio":"10mg"
+
+                }
+            },
+            {
+                "id":102,
+                "name": "Calabaza",
+                "flavor" : "Sabor a mango con mora azul",
+                "quantity" : "50 piezas",
+                "images": [
+                    "/images/sections/halloween/Calabaza/calabaza2.png",
+                    "/images/sections/halloween/Calabaza/calabaza1.png"
+                ],
+                "nutrition": {
+                    
+                    "proteinas": "5g",
+                    "Grasas Totales": "0g",
+                    "Grasas Sautaradas":"0g",
+                    "Grasas Trans": "0mg",
+                    "Hidratos De Carbono": "77g",
+                    "Azucares": "76g",
+                    "Azucares Añadidos":"76g",
+                    "Fibra Diabetica":"0.50g",
+                    "Sodio":"10mg"
+
+                }
+            },
+                        {
+                "id":103,
+                "name": "Surtido Muertos",
+                "flavor" : "Sabor a mango con mora azul",
+                "quantity" : "50 piezas",
+                "images": [
+                    "/images/sections/halloween/SurtidoRico/surtidorico1.png",
+                    "/images/sections/halloween/Calabaza/calabaza1.png",
+                    "/images/sections/halloween/Calavera/calavera3.png",
+                    "/images/sections/halloween/Calavera/calavera4.png",
+                    "/images/sections/halloween/Calavera/calavera5.png"
+                ],
+                "nutrition": {
+                    
+                    "proteinas": "5g",
+                    "Grasas Totales": "0g",
+                    "Grasas Sautaradas":"0g",
+                    "Grasas Trans": "0mg",
+                    "Hidratos De Carbono": "77g",
+                    "Azucares": "76g",
+                    "Azucares Añadidos":"76g",
+                    "Fibra Diabetica":"0.50g",
+                    "Sodio":"10mg"
+
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Christmas",
+        "subtitle" : "Sabor, magia y estilo navideño",
+        "image": "/images/sections/christmas/christmas.png",
+        "iconName": "mdiStringLights",
+        "subdivisions": [
+            {
+                "id":201,
+                "name": "Santa Claus",
+                "flavor" : "Sabor a mango con mora azul",
+                "quantity" : "50 piezas",
+                "images": [
+                    "/images/sections/christmas/Santa/santa1.png",
+                    "/images/sections/christmas/Santa/santa2.png",
+                    "/images/sections/christmas/Santa/santa3.png",
+                    "/images/sections/christmas/Santa/santa4.png",
+                    "/images/sections/christmas/Santa/santa5.png"
+
+                ],
+                "nutrition": {
+                    
+                    "proteinas": "5g",
+                    "Grasas Totales": "0g",
+                    "Grasas Sautaradas":"0g",
+                    "Grasas Trans": "0mg",
+                    "Hidratos De Carbono": "77g",
+                    "Azucares": "76g",
+                    "Azucares Añadidos":"76g",
+                    "Fibra Diabetica":"0.50g",
+                    "Sodio":"10mg"
+
+                }
+            },
+            {
+                "id":202,
+                "name": "Casita",
+                "flavor" : "Sabor a mango con mora azul",
+                "quantity" : "50 piezas",
+                "images": [
+                    "/images/sections/christmas/Casa/casa1.png",
+                    "/images/sections/christmas/Casa/casa2.png",
+                    "/images/sections/christmas/Casa/casa3.png",
+                    "/images/sections/christmas/Casa/casa4.png",
+                    "/images/sections/christmas/Casa/casa5.png"
+
+                ],
+                "nutrition": {
+                    
+                    "proteinas": "5g",
+                    "Grasas Totales": "0g",
+                    "Grasas Sautaradas":"0g",
+                    "Grasas Trans": "0mg",
+                    "Hidratos De Carbono": "77g",
+                    "Azucares": "76g",
+                    "Azucares Añadidos":"76g",
+                    "Fibra Diabetica":"0.50g",
+                    "Sodio":"10mg"
+
+                }
+            },
+            {
+                "id":203,
+                "name": "Muñeco",
+                "flavor" : "Sabor a mango con mora azul",
+                "quantity" : "50 piezas",
+                "images": [
+                    "/images/sections/christmas/Muneco/muneco1.png",
+                    "/images/sections/christmas/Muneco/muneco2.png",
+                    "/images/sections/christmas/Muneco/muneco3.png",
+                    "/images/sections/christmas/Muneco/muneco4.png"
+                ],
+                "nutrition": {
+                    
+                    "proteinas": "5g",
+                    "Grasas Totales": "0g",
+                    "Grasas Sautaradas":"0g",
+                    "Grasas Trans": "0mg",
+                    "Hidratos De Carbono": "77g",
+                    "Azucares": "76g",
+                    "Azucares Añadidos":"76g",
+                    "Fibra Diabetica":"0.50g",
+                    "Sodio":"10mg"
+
+                }
+            },
+            {
+                "id":204,
+                "name": "Surtido navideño",
+                "flavor" : "Sabor a mango con mora azul",
+                "quantity" : "50 piezas",
+                "images": [
+                    "/images/sections/christmas/SurtidoNavideño/surtido.png",
+                    "/images/sections/christmas/Muneco/muneco2.png",
+                    "/images/sections/christmas/Muneco/muneco3.png",
+                    "/images/sections/christmas/Casa/casa3.png",
+                    "/images/sections/christmas/Casa/casa4.png",
+                    "/images/sections/christmas/Santa/santa3.png",
+                    "/images/sections/christmas/Santa/santa4.png"
+                    
+                ],
+                "nutrition": {
+                    
+                    "proteinas": "5g",
+                    "Grasas Totales": "0g",
+                    "Grasas Sautaradas":"0g",
+                    "Grasas Trans": "0mg",
+                    "Hidratos De Carbono": "77g",
+                    "Azucares": "76g",
+                    "Azucares Añadidos":"76g",
+                    "Fibra Diabetica":"0.50g",
+                    "Sodio":"10mg"
+
+                }
+            }
+        ]
+    }
+]

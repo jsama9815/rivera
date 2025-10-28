@@ -1,0 +1,104 @@
+<script>
+    import SvgIcon from '@jamescoyle/vue-icon';
+    import { mdiMagnify } from '@mdi/js';
+
+    export default {
+    name: "my-component",
+    components: {
+        SvgIcon
+    },
+    data() {
+        return {
+        path: mdiMagnify,
+        }
+    },
+    methods: {
+        gohome() {
+            this.$router.push('/')
+        },
+          goToSection(sectionId) {
+            this.$router.push({ path: '/', hash: `#${sectionId}` })
+        }
+    }
+    }
+</script>
+
+<template>
+  <div class="mainBoxNavBar">
+    <div class="backgroundBox">
+        <div class="leftBox">
+            <div class="itemsLeftBox">
+                <img 
+                    src="../assets/images/LOGO_RIVERA.png" 
+                    alt="LOGO_RIVERA" 
+                    class="logoNavBar"
+                    @click="gohome"
+                >
+            </div>
+        </div>
+        <div class="rightBox">
+            <div class="itemsRightBox">
+                <p @click="goToSection('history')">Nuestra Historia</p>
+                <p @click="goToSection('products')">Productos</p>
+                <p @click="goToSection('contact')">Contacto</p>
+                <svg-icon 
+                    type="mdi" 
+                    :path="path"
+                    :size = 20
+                    style="color: #80808099;"
+                    class="searchIcon"
+                ></svg-icon>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</template>
+
+<style scoped>
+  .mainBoxNavBar {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .backgroundBox {
+      width: 100%;
+      height: 9vh;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: rgb(147, 202, 245);
+      overflow: visible;
+    }
+    .leftBox {
+        display: flex;
+        align-items:center;
+    }
+    .rightBox{
+      display: flex;
+      align-items: center;
+      padding-right: 2%;
+    }
+    .itemsRightBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+    }
+    .itemsRightBox p {
+        margin: 0;
+        padding-right: 1.5vh;
+        color: rgb(183, 67, 183);
+        cursor: pointer;
+    }
+    .logoNavBar {
+        width: 13vh;
+        margin-bottom: -5vh;
+        cursor: pointer;
+    }
+    .searchIcon {
+        cursor: pointer;
+    }
+</style>
