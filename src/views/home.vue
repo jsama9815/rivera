@@ -8,7 +8,8 @@
     const mdiIconMap = {
         mdiHalloween: mdiHalloween,
         mdiStringLights: mdiStringLights
-    }
+    };
+
     export default {
         name: "my-component",
         components: {
@@ -18,7 +19,9 @@
         data() {
             return {
                 categories: [],
-                mdiArrowRightCircle: mdiArrowRightCircle
+                mdiArrowRightCircle: mdiArrowRightCircle,
+                showWelcome: false,
+                hideTimeout: null
             }
         },
         created() {
@@ -26,6 +29,36 @@
                 ...category,
                 iconPath: mdiIconMap[category.iconName]
             }))
+        },
+        mounted() {
+            const hasSeenWelcome = localStorage.getItem("hasSeenWelcome");
+
+            if(!hasSeenWelcome) {
+                this.showWelcome = true;
+                this.hideTimeout = setTimeout(() => {
+                    this.closeWelcome();
+                }, 10000);
+
+                localStorage.setItem("hasSeenWelcome", "true")
+            }
+
+            document.addEventListener("click", this.handleClicksOutside)
+        },
+        beforeUnmount() {
+            document.removeEventListener("click", this.handleClicksOutside)
+            if (this.hideTimeout) clearTimeout(this.hideTimeout);
+        },
+        methods: {
+            closeWelcome() {
+                this.showWelcome = false;
+                if (this.hideTimeout) clearTimeout(this.hideTimeout)
+            },
+            handleClicksOutside(event) {
+                const imageElement = this.$refs.welcomeImage;
+                if(this.showWelcome && imageElement && !imageElement.contains(event.target)) {
+                    this.closeWelcome()
+                }
+            }
         }
     }
 </script>
@@ -33,6 +66,19 @@
 
 <template>
     <div class="mainBoxHome">
+        <div
+            v-if="showWelcome"
+            class="welcomeOverlay"
+        >
+            <div class="welcomeContent">
+                <img 
+                    ref="welcomeImage"
+                    src="../assets/images/bienvenida.png" 
+                    alt="Bienvenida"
+                    class="welcomeImage"                
+                >
+            </div>
+        </div>
         <div class="mainBoxSlider">
             <Slider></Slider>
         </div>
@@ -115,6 +161,26 @@
     .mainBoxHome {
         width: 100%;
         overflow: hidden;
+    }
+    .welcomeOverlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        animation: fadeIn 0.5s ease;
+    }
+    .welcomeContent {
+        position: relative;
+    }
+    .welcomeImage {
+        max-width: 80%;
+        max-height: 50vh;
+        border-radius: 10px;
+        animation: zoomIn 0.5s ease;
+        cursor: default;
     }
     .dulcesQueNacenDelCorazonBox {
         width: 100%;
@@ -272,5 +338,16 @@
         height: 1.5em;
         color: white;
     }
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
 
+    @keyframes zoomIn {
+        from { transform: scale(0.8); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+
+
+    
 </style>
