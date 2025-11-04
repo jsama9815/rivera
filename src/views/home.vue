@@ -393,5 +393,139 @@
     }
 
 
-    
+    @media (max-width: 1024px) {
+        .aboutUsImg {
+            width: 40%;
+            padding-top: 10%;
+        }
+
+        .categoryCard {
+            width: 400px;
+            height: 230px;
+        }
+
+        .categoryTitle {
+            font-size: 2em;
+        }
+
+        .titleOurProducts {
+            font-size: 2.5em;
+        }
+
+        .mainInformationOurProducts,
+        .secondaryInformationOurProducts {
+            font-size: 1.1em;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .aboutUsImg {
+            width: 60%;
+            padding-top: 11%;
+        }
+
+        .textImageBox {
+            padding: 2.5rem 1.5rem;
+        }
+
+        .texto {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .categoriesBox {
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .categoryCard {
+            width: 90%;
+            height: 220px;
+        }
+
+        .categoryTitle {
+            font-size: 1.8em;
+        }
+
+        .titleOurProducts {
+            font-size: 2.2em;
+        }
+
+        .mainInformationOurProducts,
+        .secondaryInformationOurProducts {
+            font-size: 1em;
+        }
+
+        .catalogButton {
+            padding: 12px 16px;
+            font-size: 1em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .aboutUsImg {
+            width: 75%;
+            padding-top: 12%;
+        }
+
+        .textImageBox {
+            padding: 2rem 1rem;
+        }
+
+        .texto {
+            font-size: 0.95rem;
+        }
+
+        .categoryCard {
+            width: 100%;
+            height: 200px;
+        }
+
+        .categoryTitle {
+            font-size: 1.6em;
+        }
+
+        .categorySubtitle {
+            font-size: 0.9em;
+        }
+
+        .titleOurProducts {
+            font-size: 1.8em;
+        }
+
+        .mainInformationOurProducts,
+        .secondaryInformationOurProducts {
+            font-size: 0.95em;
+        }
+
+        .catalogButton {
+            padding: 10px 14px;
+            font-size: 0.9em;
+        }
+    }
+
+    @media (min-width: 1600px) {
+        .aboutUsImg {
+            width: 25%;
+        }
+
+        .categoryCard {
+            width: 550px;
+            height: 300px;
+        }
+
+        .categoryTitle {
+            font-size: 3em;
+        }
+
+        .titleOurProducts {
+            font-size: 3.5em;
+        }
+
+        .texto {
+            font-size: 1.3rem;
+        }
+    }
 </style>

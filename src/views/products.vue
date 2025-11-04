@@ -121,6 +121,7 @@
         width: 350px;
         background: linear-gradient(90deg, #6049d8 0%, #c44edb 50%, #f89fb6 100%);
         height: 340px;
+        aspect-ratio: 1 / 1;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -161,6 +162,131 @@
         color: #555;
         margin-top: 80px;
         font-size: 1.2rem;
+    }
+
+    @media (min-width: 1600px) {
+        .category-title {
+            font-size: 5rem;
+        }
+
+        .category-subtitle {
+            font-size: 2rem;
+        }
+
+        .subdivision-card {
+            width: 300px;
+            height: 270px;
+        }
+
+        .product-name {
+            font-size: 1.1rem;
+        }
+    } 
+
+
+    @media (max-width: 1024px) {
+        .header-section {
+            padding: 80px 0 100px;
+        }
+
+        .category-title {
+            font-size: 3.5rem;
+        }
+
+        .category-subtitle {
+            font-size: 1.4rem;
+        }
+
+        .subdivisions-container {
+            gap: 50px 20px;
+            padding: 0 1.5rem;
+        }
+
+        .subdivision-card {
+            width: 220px;
+            height: 210px;
+        }
+
+        .product-name {
+            font-size: 0.95rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .header-section {
+            padding: 70px 1rem 80px;
+        }
+
+        .category-title {
+            font-size: 2.8rem;
+        }
+
+        .category-subtitle {
+            font-size: 1.2rem;
+        }
+
+        .triangleProducts {
+            bottom: -6%;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-top: 30px solid #c44edb;
+        }
+
+        .subdivisions-container {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .subdivision-card {
+            width: 180px;
+            height: 180px;
+        }
+
+        .product-name {
+            font-size: 0.9rem;
+            padding: 5px 18px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .header-section {
+            padding: 60px 0 70px;
+        }
+
+        .category-title {
+            font-size: 2rem;
+        }
+
+        .category-subtitle {
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+
+        .triangleProducts {
+            bottom: -5%;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-top: 25px solid #c44edb;
+        }
+
+        .subdivisions-container {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 40px;
+            padding: 0 1rem;
+        }
+
+        .subdivision-card {
+            max-width: 95%;
+            aspect-ratio: 4 / 5;
+            border-radius: 15px;
+        }
+
+        .product-name {
+            font-size: 0.85rem;
+            padding: 5px 15px;
+        }
     }
 
 </style>

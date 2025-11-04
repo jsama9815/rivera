@@ -105,4 +105,32 @@
     .searchIcon {
         cursor: pointer;
     }
+    @media (max-width: 1024px) {
+        .backgroundBox {
+            height: 10vh;
+            padding: 0 3%;
+        }
+
+        .logoNavBar {
+            width: 10vh;
+        }
+
+        .itemsRightBox p {
+            font-size: 1.9vh;
+            padding-right: 1vh;
+        }
+    }
+    @media (max-width: 480px) {
+        .backgroundBox {
+            padding: 1vh 0;
+        }
+
+        .logoNavBar {
+            width: 9vh;
+        }
+
+        .itemsRightBox p {
+            font-size: 1.3vh;
+        }
+    }
 </style>

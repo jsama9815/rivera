@@ -292,18 +292,24 @@ export default {
     }
 
     @media (max-width: 900px) {
-    .content-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        margin: 0 5% 60px;
-    }
+        .content-grid {
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin: 0 5% 60px;
+        }
 
-    .right-side {
-        text-align: center;
-    }
+        .right-side {
+            text-align: center;
+        }
 
-    .nutrition-note {
-        text-align: center;
-    }
+        .nutrition-note {
+            text-align: center;
+        }
+        .header-notch {
+            bottom: -8%;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-top: 25px solid transparent;
+        }
     }
 </style>

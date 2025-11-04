@@ -97,4 +97,59 @@
   .sliderButtons button:hover {
     opacity: 1;
   }
+  @media (max-width: 1024px) {
+    .mainBoxSlider {
+      height: 60vh;
+      border-radius: 8px;
+    }
+
+    .sliderButtons button {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  @media (max-width: 768px) {
+    .mainBoxSlider {
+      height: 45vh;
+      border-radius: 8px;
+    }
+
+    .sliderButtons {
+      bottom: 10px;
+      gap: 8px;
+    }
+
+    .sliderButtons button {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .mainBoxSlider {
+      height: 35vh;
+      border-radius: 6px;
+    }
+
+    .sliderButtons {
+      bottom: 8px;
+      gap: 6px;
+    }
+
+    .sliderButtons button {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    .mainBoxSlider {
+      height: 80vh;
+    }
+
+    .sliderButtons button {
+      width: 18px;
+      height: 18px;
+    }
+  }
 </style>
