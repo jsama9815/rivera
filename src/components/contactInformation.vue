@@ -42,7 +42,7 @@
                             <h3 class="detailTitle">E-mail</h3>
                             <p class="detailText">contacto@dulcesrivera.com</p>
                         </div>
-                        <div class="detailItem locationItem">
+                        <!-- <div class="detailItem locationItem">
                             <div class="icon">
                                 <svg-icon type="mdi" :path="path.mdiMapMarker"></svg-icon>
                             </div>
@@ -52,7 +52,7 @@
                                 xxxxxxxxxxx<br>
                                 xxxxxxxxxxx
                             </p>
-                        </div>
+                        </div> -->
                         <div class="detailItem">
                             <div class="icon">
                                 <svg-icon type="mdi" :path="path.mdiPhone"></svg-icon>
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mapColumn">
+                <!-- <div class="mapColumn">
                     <div class="mapContainer">
                       <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.222883163717!2d-99.17141817478748!3d19.359499581904277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffeb38bb3f31%3A0x25235187d9ce5f40!2sM%C3%ADtikah%20Torre%20Residencial!5e0!3m2!1ses-419!2smx!4v1759969123251!5m2!1ses-419!2smx" 
@@ -91,7 +91,7 @@
                         referrerpolicy="no-referrer-when-downgrade"
                       ></iframe>  
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
