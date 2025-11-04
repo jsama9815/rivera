@@ -82,6 +82,9 @@
         <div class="mainBoxSlider">
             <Slider></Slider>
         </div>
+        <div class="separation">
+            <div class="triangle"></div>
+        </div>
         <div class="aboutUsBox">
             <div class="dulcesQueNacenDelCorazonBox" id="history">
                 <div class="dulcesImageBox">
@@ -103,33 +106,12 @@
                             que cada bombón tenga personalidad, sabor inolvidable y un toque artesanal que lo haga especial.
                         </p>
 
-                        <p class="texto">
+                        <p class="texto"  id="products">
                             <strong>Hoy seguimos creciendo, con el mismo sueño:</strong>
                             compartir alegría, sin perder la esencia que nos une.
                         </p>
                 </div>
-                <div class="categoriesBox">
-                    <router-link
-                        v-for="category in categories"
-                        :key="category.id"
-                        :to="{ name: 'products', params: { categoryId: category.id } }"
-                        class="categoryCard"
-                        :style="{ backgroundImage: `url(${category.image})` }"
-                        >
-                        <div class="textCategory">
-                            <h3 class="categoryTitle">{{ category.title }}</h3>
-                            <p class="categorySubtitle"> {{ category.subtitle }}</p>
-                        </div>
-                    <div class="overlay">
-                        <div class="categoryContentBox" id="products">
-                                <!-- <div class="iconOfCategories">
-                                    <svg-icon type="mdi" :path="category.iconPath"></svg-icon>
-                                </div> -->
-                            </div>
-                        </div>
-                    </router-link>
-                </div>
-                <div class="ourProductsBox" >
+                <div class="ourProductsBox">
                     <div class="ourProductsInformationBox">
                         <h2 class="titleOurProducts" >Nuestros productos</h2>
                         <p class="mainInformationOurProducts">
@@ -141,6 +123,27 @@
                             Innovamos para que disfrutes lo mejor de la tradición con un toque de
                             modernidad.
                         </p>
+                        <div class="categoriesBox">
+                            <router-link
+                                v-for="category in categories"
+                                :key="category.id"
+                                :to="{ name: 'products', params: { categoryId: category.id } }"
+                                class="categoryCard"
+                                :style="{ backgroundImage: `url(${category.image})` }"
+                            >
+                                <div class="textCategory">
+                                    <h3 class="categoryTitle">{{ category.title }}</h3>
+                                    <p class="categorySubtitle"> {{ category.subtitle }}</p>
+                                </div>
+                                <div class="overlay">
+                                    <div class="categoryContentBox">
+                                        <!-- <div class="iconOfCategories">
+                                            <svg-icon type="mdi" :path="category.iconPath"></svg-icon>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </router-link>
+                        </div>
                         <button class="catalogButton">
                             Descarga Nuestro Catálogo
                             <svg-icon 
@@ -161,6 +164,23 @@
     .mainBoxHome {
         width: 100%;
         overflow: hidden;
+    }
+    .separation {
+        width: 100%;
+        height: 80px; 
+        background-color: white;
+        position: relative
+    }
+    .triangle {
+        position: absolute;
+        bottom: -50%; 
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-top: 40px solid white;
     }
     .welcomeOverlay {
         position: fixed;
@@ -188,7 +208,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color:#c9e6f0;
+        background-color:#b7e3ec;
     }
     .dulcesImageBox {
         display: flex;
@@ -217,18 +237,23 @@
         line-height: 1;
         font-size: 1.2rem;
         text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: italic;
     }
     .categoriesBox {
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 0.4rem;
-        width: 90%;
-        max-width: 1100px;
+        flex-direction: row;  
+        justify-content: center;  
+        align-items: stretch;  
+        gap: 2rem;             
+        white-space: nowrap;      
+        padding: 1rem 0;
     } 
     .categoryCard {
         position: relative;
-        width: 500px;
+        width: 500px;            
         height: 260px;
         border-radius: 10px;
         overflow: hidden;
@@ -236,7 +261,6 @@
         background-position: center;
         cursor: pointer;
         transition: transform 0.3s ease;
-        cursor: pointer;
     }
     .categoryCard:hover {
         transform: scale(1.02);
@@ -273,8 +297,8 @@
         color: white;
         font-size: 2.5em; 
         font-weight: bold;
-        margin: 0 0 5px 0; /* Espacio debajo del título */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor lectura */
+        margin: 0 0 5px 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     .categorySubtitle {
@@ -282,7 +306,7 @@
         font-size: 1.1em;
         margin: 0;
         opacity: 0.9;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para mejor lectura */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
     .ourProductsBox {
         display: flex;
@@ -291,24 +315,40 @@
         justify-content: center;
         padding: 40px 20px;
         text-align: center;
-        font-family: Arial, sans-serif;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: italic;
+        width: 100%;
     }
     .ourProductsInformationBox {
         max-width: 800px;
     }
     .titleOurProducts {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: italic;
         font-size: 3em;
         color: #313178;
         margin-bottom: 20px;
         font-weight: bold;
     }
     .mainInformationOurProducts {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: italic;
         font-size: 1.2em;
         color: #4a1e83;
         line-height: 1.6;
         margin-bottom: 20px;
     }
     .secondaryInformationOurProducts {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: italic;
         font-size: 1.2em;
         color: #4a1e83;
         line-height: 1.6;
@@ -327,6 +367,10 @@
         align-items: center;
         justify-content: center;
         transition: all 0.3s ease;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: italic;
     }
     .catalogButton:hover {
         background-color: #6a0dad;

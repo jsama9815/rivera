@@ -43,7 +43,7 @@
         <div class="header-section" v-if="currentCategory">
             <h1 class="category-title">{{ currentCategory.title }}</h1>
             <p class="category-subtitle">{{ currentCategory.subtitle }}</p>
-            <div class="triangle-down"></div>
+            <div class="triangleProducts"></div>
         </div>
         <div class="subdivisions-container" v-if="currentCategory">
             <div
@@ -78,31 +78,37 @@
         color: white;
     }
     .category-title {
-        font-size: 4.5rem;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
         font-weight: 700;
         font-style: italic;
+        font-size: 4.5rem;
         margin: 0;
     }
     .category-subtitle {
         font-size: 1.7rem;
         opacity: 0.95;
         margin-top: 10px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: italic;
     }
-    .triangle-down {
+    .triangleProducts {
         position: absolute;
-        bottom: -25px;
+        bottom: -8%;
         left: 50%;
         transform: translateX(-50%);
         width: 0;
         height: 0;
-        border-left: 25px solid transparent;
-        border-right: 25px solid transparent;
-        border-top: 25px solid #b7e3ec;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-top: 40px solid #c44edb;
     }
     .subdivisions-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 40px 5px;
+        gap: 80px 5px;
         justify-content: center;
         justify-items: center;
         align-items: center;
@@ -114,7 +120,7 @@
     .subdivision-card {
         width: 350px;
         background: linear-gradient(90deg, #6049d8 0%, #c44edb 50%, #f89fb6 100%);
-        height: 300px;
+        height: 340px;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -142,11 +148,14 @@
         transform: translateX(-50%);
         background: linear-gradient(90deg, #f9a682, #f6d2b3);
         color: #fff;
-        font-weight: 600;
         font-size: 1rem;
         border-radius: 12px;
         padding: 6px 25px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: italic;
     }
     .loading-message {
         color: #555;

@@ -1,6 +1,6 @@
 <script>
     import SvgIcon from '@jamescoyle/vue-icon';
-    import { mdiEmail,mdiMapMarker, mdiPhone } from '@mdi/js';
+    import { mdiEmail,mdiMapMarker, mdiPhone, mdiWhatsapp } from '@mdi/js';
 
     export default {
         name: "my-component",
@@ -12,7 +12,8 @@
                 path: {
                     mdiEmail: mdiEmail,
                     mdiMapMarker: mdiMapMarker,
-                    mdiPhone: mdiPhone
+                    mdiPhone: mdiPhone,
+                    mdiWhatsapp: mdiWhatsapp
                 }
             }
         }
@@ -21,6 +22,7 @@
 
 <template>
     <div class="contactMainBox" id="contact">
+        <div class="triangle"></div>
         <div class="contactWrapper">
             <div class="informationMainBox">
                 <div class="contactInfo">
@@ -56,7 +58,24 @@
                                 <svg-icon type="mdi" :path="path.mdiPhone"></svg-icon>
                             </div>
                             <h3 class="detailTitle">Telefono</h3>
-                            <p class="detailText">55 5555 5555</p>
+                            <p class="detailText">55 4544 44476</p>
+                        </div>
+                        <div class="detailItem">
+                            <div class="icon">
+                                <a 
+                                    href="https://wa.me/5215545444476"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <svg-icon 
+                                        type="mdi" 
+                                        :path="path.mdiWhatsapp" 
+                                        class="whatsapp"
+                                    ></svg-icon>
+                                </a>
+                            </div>
+                            <h3 class="detailTitle">Chatea con nostros</h3>
+                            <h3 class="detailTitle">por whatsapp</h3>
                         </div>
                     </div>
                 </div>
@@ -116,9 +135,12 @@
         }
     }
     .title {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: italic;
         font-size: 2.5rem;
         line-height: 1.2;
-        font-weight: bold;
         color: white;
         margin-bottom: 1rem;
     }
@@ -132,6 +154,10 @@
         color: white;
         margin-bottom: 2.5rem;
         max-width: 450px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: italic;
     }
     .contactDetails {
         display: grid;
@@ -151,14 +177,25 @@
         margin-bottom: 0.5rem;
     }
     .detailTitle {
-        font-size: 1rem; /* 16px */
+        font-size: 1rem;
         color: rgba(255, 255, 255, 0.9);
         line-height: 1.4;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: italic;
+    }
+    .whatsapp {
+        cursor: pointer;
     }
     .detailText {
-        font-size: 1rem; /* 16px */
+        font-size: 1rem;
         color: rgba(255, 255, 255, 0.9);
         line-height: 1.4;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: italic;
     }
     .locationText {
         white-space: pre-line;
@@ -185,5 +222,16 @@
     }
     .icon {
         color: purple;
+    }
+    .triangle {
+        position: absolute;
+        top: -1%; 
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-top: 40px solid #b7e3ec;
     }
 </style>

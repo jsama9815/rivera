@@ -88,6 +88,10 @@
         justify-content: baseline;
     }
     .itemsRightBox p {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: italic;
         margin: 0;
         padding-right: 1.5vh;
         color: rgb(183, 67, 183);

@@ -1,9 +1,9 @@
 <script setup>
   import { ref, onMounted, onUnmounted } from 'vue';
-  import img1 from "../../public/images/carousel/carousel1.png"
-  import img2 from "../../public/images/carousel/carousel1.png"
-  import img3 from "../../public/images/carousel/carousel1.png"
-  import img4 from "../assets/images/carrusel.jpg"
+  import img1 from "/images/carousel/carousel1.png"
+  import img2 from "/images/carousel/carousel2.png"
+  import img3 from "/images/carousel/carousel1.png"
+  import img4 from "/images/carousel/carousel2.png"
 
   const images = [img1,img2,img3,img4 ]
 

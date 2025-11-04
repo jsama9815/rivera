@@ -1,11 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-// import HomeView from '../views/HomeView.vue'
-import navBar from '@/components/navBar.vue'
-import slider from '@/components/slider.vue'
 import Home from '@/views/home.vue'
-import contactInformation from '@/views/contact.vue'
-import AboutUs from '@/components/aboutUs.vue'
-import Bottom from '@/components/bottom.vue'
 import products from '@/views/products.vue'
 import ProductsDetails from '@/views/productsDetails.vue'
 
@@ -17,36 +11,6 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: Home,
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue'),
-    },
-    {
-      path: '/nav',
-      name: 'navbar',
-      component: navBar
-    },
-        {
-      path: '/slider',
-      name: 'slider',
-      component: slider
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: contactInformation
-    },
-    {
-      path: '/about' ,
-      name: 'about' ,
-      component: AboutUs
-    },
-    {
-      path: '/bottom',
-      name: 'bottom',
-      component: Bottom
     },
     {
       path: '/products/:categoryId',

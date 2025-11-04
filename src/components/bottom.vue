@@ -68,19 +68,27 @@
         height: 60px; 
         color: #ff91a4;
         margin-bottom: 15px;
+        cursor: pointer;
     }
 
     .followUsTittle {
         font-size: 2.5em;
-        font-weight: bold;
         color: #4b3c7e;
         margin-bottom: 10px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: italic;
     }
 
     .textFollowUs {
         font-size: 1.3em;
         color: #4b3c7e;
         margin-bottom: 30px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: italic;
     }
 
     .footerSection {
@@ -106,14 +114,16 @@
 
     .footerText {
         margin: 0 8px;
-        white-space: nowrap; 
+        white-space: nowrap;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: italic; 
     }
     .footerSeparator {
         margin: 0 5px;
         color: rgba(255, 255, 255, 0.6); 
     }
-
-
     @media (max-width: 768px) {
     .footerContent {
         flex-direction: column;

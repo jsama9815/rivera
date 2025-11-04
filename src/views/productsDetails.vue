@@ -65,9 +65,17 @@ export default {
         </section>
         <section class="product-section">
             <div class="breadcrumbs">
-                Inicio > {{ currentCategory.title }} > {{ currentProduct.name }}
+                <router-link to="/" class="breadcrumb-link">Inicio</router-link>
+                <span> > </span>
+                <router-link
+                    :to="{ name: 'products', params: { categoryId: currentCategory.id } }"
+                    class="breadcrumb-link"
+                >
+                    {{ currentCategory.title }}
+                </router-link>
+                <span> > </span>
+                <span class="breadcrumb-current">{{ currentProduct.name }}</span>
             </div>
-
             <div class="content-grid">
                 <div class="left-side">
                     <div class="thumbs">
@@ -122,8 +130,7 @@ export default {
 <style scoped>
     .product-detail-view {
         font-family: "Poppins", sans-serif;
-        background-color: #c9e8f7;
-        /* min-height: 100vh; */
+        background-color: #b7e3ec;
         margin: 0;
         padding-bottom: 80px;
         color: #333;
@@ -139,15 +146,22 @@ export default {
     .halloween-header h1 {
         font-size: 3rem;
         margin: 0;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
         font-weight: 700;
+        font-style: italic;
     }
     .halloween-header p {
         font-size: 1.2rem;
         margin-top: 8px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: italic;
     }
     .header-notch {
         position: absolute;
-        bottom: -19%; 
+        bottom: -15%; 
         left: 50%;
         transform: translateX(-50%);
         width: 0;
@@ -158,12 +172,24 @@ export default {
     }
     .product-section {
         margin-top: 40px; 
-        /* padding-top: 40px; */
     }
     .breadcrumbs {
         margin: 20px 10%;
         font-size: 0.95rem;
         color: #555;
+    }
+    .breadcrumb-link {
+        color: #4a1e83;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: italic;
+    }
+    .breadcrumb-link:hover {
+        color: #6a0dad;
+        text-decoration: underline;
     }
     .content-grid {
         display: grid;
@@ -205,7 +231,10 @@ export default {
     .flavor-text {
         margin-top: 10px;
         color: #444;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
         font-weight: 500;
+        font-style: italic;
         font-size: 1rem;
     }
     .right-side {
@@ -215,6 +244,10 @@ export default {
         color: #3a2478;
         font-size: 2rem;
         margin-bottom: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: italic;
     }
     .nutrition-table {
         width: 100%;
@@ -227,7 +260,10 @@ export default {
     .nutrition-table thead {
         background: #3a2478;
         color: white;
-        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: italic;
     }
     .nutrition-table th,
     .nutrition-table td {
@@ -236,6 +272,10 @@ export default {
     .nutrition-table td {
         border-top: 1px solid #eee;
         color: #444;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: italic;
     }
     .align-right {
         text-align: right;
@@ -244,8 +284,11 @@ export default {
         margin-top: 10px;
         text-align: right;
         color: #555;
-        font-style: italic;
         font-size: 0.9rem;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: italic;
     }
 
     @media (max-width: 900px) {
