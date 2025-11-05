@@ -58,7 +58,13 @@
                 if(this.showWelcome && imageElement && !imageElement.contains(event.target)) {
                     this.closeWelcome()
                 }
-            }
+            },
+            // downloadCatalog () {
+            //     const link = document.createElement('a')
+            //     link.href = '/catalogo.pdf' // <-- Ruta al archivo PDF en tu carpeta /public
+            //     link.download = 'Catalogo_Dulces_Rivera.pdf' // nombre del archivo descargado
+            //     link.click()
+            // }
         }
     }
 </script>
@@ -117,7 +123,7 @@
                         <p class="mainInformationOurProducts">
                             Desde la investigación de tendencias hasta el diseño de producto y su
                             producción, cada dulce que elaboramos es el resultado de un proceso
-                            meticuloso, pensando para sorprender y deleitar.
+                            meticuloso, pensado para sorprender y deleitar.
                         </p>
                         <p class="secondaryInformationOurProducts">
                             Innovamos para que disfrutes lo mejor de la tradición con un toque de
@@ -208,7 +214,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color:#b7e3ec;
+        background-color:#dfe5e5;
     }
     .dulcesImageBox {
         display: flex;

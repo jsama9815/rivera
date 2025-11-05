@@ -9,7 +9,7 @@
         },
         data() {
             return {
-            mdiInstagram: mdiInstagram,
+                mdiInstagram: mdiInstagram,
             };
         },
     };
@@ -19,7 +19,26 @@
 <template>
     <div class="bottomMainBox">
         <div class="instagramSectionBox">
-            <svg-icon class="instagram-icon" type="mdi" :path="mdiInstagram"></svg-icon>
+            <div class="socialIcons">
+                <a 
+                    href="https://www.instagram.com/dulcesriveramx/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    <svg-icon class="instagram-icon" type="mdi" :path="mdiInstagram"></svg-icon>
+                </a>
+                <a 
+                    href="https://www.tiktok.com/@dulcesriveramx?lang=es-419" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    <img 
+                        src="/images/icons/tiktok.png" 
+                        alt="TikTok"
+                        class="tiktok-icon"
+                    >
+                </a>
+            </div>
             <h3 class="followUsTittle">Síguenos</h3>
             <p class="textFollowUs">Dulces historias y más</p>
         </div>
@@ -45,14 +64,12 @@
         justify-content: space-between;
         min-height: 50vh;
         height: auto;
-        background: linear-gradient(to bottom, 
-            #a7d0ec 0%,           
-            #a7d0ec calc(100% - 60px),
-            #4b3c7e calc(100% - 60px),
-            #4b3c7e 100%
-        ); 
-        font-family: Arial, sans-serif;
+        background: #dfe5e5;
         padding-top: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: italic;
     }
     .instagramSectionBox {
         display: flex;
@@ -62,13 +79,24 @@
         flex-grow: 1; 
         padding-bottom: 50px;
     }
+    .socialIcons {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 15px;
+    }
 
-    .instagram-icon {
+    .instagram-icon,
+    .tiktok-icon {
         width: 60px; 
         height: 60px; 
-        color: #ff91a4;
         margin-bottom: 15px;
         cursor: pointer;
+    }
+    .instagram-icon {
+        color: #ff91a4;
+    }
+    .tiktok-icon {
+        fill: #000;
     }
 
     .followUsTittle {

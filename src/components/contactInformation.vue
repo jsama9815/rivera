@@ -27,7 +27,7 @@
             <div class="informationMainBox">
                 <div class="contactInfo">
                     <h2 class="title">
-                        Estamos aqui para ayudarte
+                        Estamos aquí para ayudarte
                     </h2>
                     <p class="subtitle">
                         ¿Tienes preguntas o necesitas más información? Nuestro equipo está listo para asistirte.
@@ -40,19 +40,18 @@
                                 <svg-icon type="mdi" :path="path.mdiEmail"></svg-icon>
                             </div>
                             <h3 class="detailTitle">E-mail</h3>
-                            <p class="detailText">contacto@dulcesrivera.com</p>
+                            <p class="detailText">productosrivera_jlrs@hotmail.com</p>
                         </div>
-                        <!-- <div class="detailItem locationItem">
+                        <div class="detailItem locationItem">
                             <div class="icon">
                                 <svg-icon type="mdi" :path="path.mdiMapMarker"></svg-icon>
                             </div>
-                            <h3 class="detailTitle">Ubicacion</h3>
+                            <h3 class="detailTitle">Dirección</h3>
                             <p class="detailText locationText">
-                                Calle xxxxxx<br>
-                                xxxxxxxxxxx<br>
-                                xxxxxxxxxxx
+                                Pino 36 col. Emiliano Zapata,<br>
+                                Chicoloapan Estado de México, 56390<br>
                             </p>
-                        </div> -->
+                        </div>
                         <div class="detailItem">
                             <div class="icon">
                                 <svg-icon type="mdi" :path="path.mdiPhone"></svg-icon>
@@ -79,10 +78,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="mapColumn">
+                <div class="mapColumn">
                     <div class="mapContainer">
                       <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.222883163717!2d-99.17141817478748!3d19.359499581904277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffeb38bb3f31%3A0x25235187d9ce5f40!2sM%C3%ADtikah%20Torre%20Residencial!5e0!3m2!1ses-419!2smx!4v1759969123251!5m2!1ses-419!2smx" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2987.0480241079918!2d-98.93382672450942!3d19.3931823171784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e22c57f27595%3A0x1e29319efeee13c4!2sC.%20Pino%2036%2C%20Emiliano%20Zapata%2C%2056390%20Chicoloapan%20de%20Ju%C3%A1rez%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1762307943154!5m2!1ses-419!2smx"
                         width="100%" 
                         height="100%" 
                         style="border:0;" 
@@ -91,7 +90,7 @@
                         referrerpolicy="no-referrer-when-downgrade"
                       ></iframe>  
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -232,6 +231,6 @@
         height: 0;
         border-left: 40px solid transparent;
         border-right: 40px solid transparent;
-        border-top: 40px solid #b7e3ec;
+        border-top: 40px solid #dfe5e5;
     }
 </style>

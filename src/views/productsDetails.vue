@@ -94,7 +94,8 @@ export default {
                     </div>
 
                     <p class="flavor-text">
-                            {{ currentProduct.flavor }} | Cantidad: {{ currentProduct.quantity }}
+                            {{ currentProduct.flavor }} | Cantidad: {{ currentProduct.quantity }} <br>
+                            Contenido Neto 500G
                     </p>
                 </div>
                 <div class="right-side">
@@ -115,7 +116,7 @@ export default {
                         </tbody>
                     </table>
                     <p class="nutrition-note">
-                        La información nutrimental declarada equivale a consumir 10 piezas de 10g.
+                        Contenido energético por envase: 1651.69 Kcal (7018.10 KJ)
                     </p>
                 </div>
             </div>

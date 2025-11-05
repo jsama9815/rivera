@@ -70,7 +70,7 @@
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      background-color: rgb(147, 202, 245);
+      background-color: #580c93;
       overflow: visible;
     }
     .leftBox {
@@ -94,7 +94,7 @@
         font-style: italic;
         margin: 0;
         padding-right: 1.5vh;
-        color: rgb(183, 67, 183);
+        color: white;
         cursor: pointer;
     }
     .logoNavBar {
