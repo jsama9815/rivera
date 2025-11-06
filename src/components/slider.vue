@@ -2,10 +2,9 @@
   import { ref, onMounted, onUnmounted } from 'vue';
   import img1 from "/images/carousel/carousel1.png"
   import img2 from "/images/carousel/carousel2.png"
-  import img3 from "/images/carousel/carousel1.png"
-  import img4 from "/images/carousel/carousel2.png"
+  import img3 from "/images/carousel/carousel3.png"
 
-  const images = [img1,img2,img3,img4 ]
+  const images = [img1,img2,img3 ]
 
   const currentIndex = ref(0);
   let intervalId = null

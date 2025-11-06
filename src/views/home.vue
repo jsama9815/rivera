@@ -59,12 +59,12 @@
                     this.closeWelcome()
                 }
             },
-            // downloadCatalog () {
-            //     const link = document.createElement('a')
-            //     link.href = '/catalogo.pdf' // <-- Ruta al archivo PDF en tu carpeta /public
-            //     link.download = 'Catalogo_Dulces_Rivera.pdf' // nombre del archivo descargado
-            //     link.click()
-            // }
+            downloadCatalog () {
+                const link = document.createElement('a')
+                link.href = '/docs/catalogo.pdf'
+                link.download = 'Catalogo_Dulces_Rivera_Navidad.pdf' 
+                link.click()
+            }
         }
     }
 </script>
@@ -150,7 +150,7 @@
                                 </div>
                             </router-link>
                         </div>
-                        <button class="catalogButton">
+                        <button class="catalogButton" @click="downloadCatalog">
                             Descarga Nuestro Catálogo
                             <svg-icon 
                                 class="arrowIcon"
