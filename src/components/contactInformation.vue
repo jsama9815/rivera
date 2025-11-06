@@ -222,6 +222,10 @@
     .icon {
         color: purple;
     }
+    .icon a {
+        text-decoration: none;      
+        color: inherit; 
+    }
     .triangle {
         position: absolute;
         top: -1%; 
